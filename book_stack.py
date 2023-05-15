@@ -29,7 +29,9 @@ while True:
     pilihan = input("Masukkan pilihan Anda (1/2/3/4): ") 
 
     if pilihan == "1": 
-        buku_baru = input("Masukkan nama buku dan nama pengarangnya (cont : (Nama Buku - Nama Pengarang)) yang akan ditambahkan: ") 
+        nama = input("Masukkan nama judul buku: ")
+        pengarang = input("Masukkan nama pengarang: ") 
+        buku_baru = nama + " - " + pengarang
         tambah_buku(stack, buku_baru) 
     elif pilihan == "2": 
         hapus_buku_terakhir(stack) 
